@@ -52,7 +52,7 @@ func init() {
 			coinName = binary.BytesToString(content)
 		} else {
 			// 旧版本数据
-			coinName = "ATRI币"
+			coinName = "小樱币"
 		}
 		wallet.SetWalletName(coinName)
 	}()
@@ -139,7 +139,7 @@ func init() {
 			}
 			ctx.SendChain(message.Image("file:///" + file.BOTPATH + "/" + drawedFile))
 		})
-	en.OnPrefix("设置硬币名称", zero.OnlyToMe, zero.SuperUserPermission).SetBlock(true).
+	en.OnPrefix("小樱币", zero.OnlyToMe, zero.SuperUserPermission).SetBlock(true).
 		Handle(func(ctx *zero.Ctx) {
 			coinName := strings.TrimSpace(ctx.State["args"].(string))
 			err := os.WriteFile(coinNameFile, binary.StringToBytes(coinName), 0644)
