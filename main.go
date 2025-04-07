@@ -62,15 +62,16 @@ import (
 	//                          vvvvvvvvvvvvvv                          //
 	//                               vvvv                               //
 
-	//_ "github.com/FloatTech/ZeroBot-Plugin/custom"                   // 自定义插件合集
+	// _ "github.com/FloatTech/ZeroBot-Plugin/custom"                   // 自定义插件合集
 	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ahsai"             // ahsai tts
 	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aifalse"           // 服务器监控
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aiwife"            // 随机老婆
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/alipayvoice"       // 支付宝到账语音
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/animetrace"        // AnimeTrace 动画/Galgame识别
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/autowithdraw"      // 触发者撤回时也自动撤回
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/baiduaudit"        // 百度内容审核
-	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/base16384"         // base16384加解密
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aiwife"       // 随机老婆
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/alipayvoice"  // 支付宝到账语音
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/animetrace"   // AnimeTrace 动画/Galgame识别
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/autowithdraw" // 触发者撤回时也自动撤回
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/baiduaudit"   // 百度内容审核
+
+	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/base16384"         // base16384加解密
 	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/base64gua"         // base64卦加解密
 	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/baseamasiro"       // base天城文加解密
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/bilibili"          // b站相关
@@ -149,7 +150,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ymgal"             // 月幕galgame
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/yujn"              // 遇见API
 
-	 _ "github.com/FloatTech/ZeroBot-Plugin/plugin/wtf"           // 鬼东西
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wtf" // 鬼东西
 
 	//                               ^^^^                               //
 	//                          ^^^^^^^^^^^^^^                          //
@@ -255,7 +256,7 @@ func init() {
 	}
 
 	// 通过代码写死的方式添加主人账号
-	 sus = append(sus, 3234145591)
+	sus = append(sus, 3234145591)
 	// sus = append(sus, 87654321)
 
 	// 启用 webui
