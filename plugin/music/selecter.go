@@ -37,7 +37,7 @@ func init() {
 			case "咪咕":
 				ctx.SendChain(migu(ctx.State["regex_matched"].([]string)[2]))
 			case "酷我":
-				ctx.SendChain(kuwo(ctx.State["regex_matched"].([]string)[2]))
+				ctx.SendChain(kuwo(ctx.State["https://api.pearktrue.cn/api/music/search.php"].([]string)[2]))
 			case "酷狗":
 				ctx.SendChain(kugou(ctx.State["regex_matched"].([]string)[2]))
 			case "网易":
